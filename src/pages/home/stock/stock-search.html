@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>高级查询</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="search-content">
+  <ion-list padding>
+    <!-- <ion-item id="search-sl">
+      <ion-label>项目所在地</ion-label>
+      <ion-select [(ngModel)]="filters.proj" okText="确定" cancelText="取消">
+        <ion-option value="01">全部</ion-option>
+        <ion-option value="02">宁波</ion-option>
+        <ion-option value="03">长沙</ion-option>
+        <ion-option value="04">仪征</ion-option>
+        <ion-option value="05">上海</ion-option>
+        <ion-option value="06">南京</ion-option>
+        <ion-option value="07">新疆</ion-option>
+      </ion-select>
+    </ion-item> -->
+    <div>
+      <ion-label stacked>SETECH物料号</ion-label>
+      <ion-textarea placeholder="请输入SETECH物料号" [(ngModel)]="filters.sdsCode"></ion-textarea>
+    </div>
+    <div>
+      <ion-label stacked>描述</ion-label>
+      <ion-textarea placeholder="请输入描述" [(ngModel)]="filters.maDesc"></ion-textarea>
+    </div>
+  </ion-list>
+  <div padding>
+    <button ion-button block (click)="adSearch()">搜索</button>
+  </div>
+</ion-content>

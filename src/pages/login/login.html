@@ -1,0 +1,35 @@
+
+
+<ion-content class="padding loginbk">
+  <div class="logo">
+    <img src="assets/icon/logo.png">
+  </div>
+  <form #signupCreds="ngForm" (ngSubmit)="login()">
+
+    <ion-item class="login-row" style="background-color: initial">
+      <ion-label><img src="assets/icon/login_user.png" /></ion-label>
+      <ion-input id="loginId" type="text" [(ngModel)]="loginForm.loginId" name="loginId" aria-placeholder="用户名"></ion-input>
+    </ion-item>
+    <ion-item class="login-row" style="background-color: initial">
+      <ion-label><img src="assets/icon/login_pwd.png" /></ion-label>
+      <ion-input id="pwd" type="password" [(ngModel)]="loginForm.password" name="password"></ion-input>
+    </ion-item>
+    <ion-item class="login-row" style="background-color: initial">
+      <label style="color:white;font-size:13px">是否记住密码</label>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" id="isRemeber" name="isRemeber" [(ngModel)]="loginForm.isRemeber"> 
+    </ion-item>
+
+    <div class="login-btn">
+      <button color="light" block="" type="submit" class="button button-ios button-block">
+        <span class="button-inner">登录</span>
+      </button>
+      <p>
+        <!--
+        <input type="text" [(ngModel)]="tes.name" name="tesss">-->
+      </p>
+    </div>
+
+  </form>
+
+</ion-content>

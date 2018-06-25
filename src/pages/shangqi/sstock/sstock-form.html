@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>库存详情</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="form-top">
+    <div class="cs-list">
+      <label class="form-title-label">SETECH物料号:</label>
+      <span class="form-title-span">{{stockInfo.STO_SDSMETERIALNO}}</span>
+    </div>
+    <div class="cs-list">
+      <label class="form-sub-title-label">中文描述/英文描述/规格或型号:</label>
+      <div class="form-sub-title-div">{{stockInfo.STO_DESCRIPTION}}</div>
+    </div>
+  </div>
+  <div class="form-split"></div>
+  <div class="form-center">
+    
+    <div>
+      <img src="assets/icon/small/1.png">
+      <label>制造商:</label>
+      <span>{{stockInfo.STO_MATERIALMAKER}}</span>
+    </div>
+    <div>
+      <img src="assets/icon/small/2.png">
+      <label>单位:</label>
+      <span>{{stockInfo.STO_UNIT}}</span>
+    </div>
+  
+    <div>
+      <img src="assets/icon/small/3.png">
+      <label>数量:</label>
+      <span>{{stockInfo.STO_QUANTITY}}</span>
+    </div>
+    <div>
+      <img src="assets/icon/small/4.png">
+      <label>总数量:</label>
+      <span>{{stockInfo.STO_TOTALQUANTITY}}</span>
+    </div>
+    <div>
+      <img src="assets/icon/small/5.png">
+      <label>库位:</label>
+      <span>{{stockInfo.STO_POSISTION}}</span>
+    </div>
+    <div>
+      <img src="assets/icon/small/6.png">
+      <label>批号:</label>
+      <span>{{stockInfo.STO_BATCHCODE}}</span>
+    </div>
+    <div>
+      <img src="assets/icon/small/7.png">
+      <label>车间码:</label>
+      <span>{{stockInfo.STO_WORKSHOPCODE}}</span>
+    </div>
+  
+    <div>
+      <img src="assets/icon/small/9.png">
+      <label>所在基地:</label>
+      <span>{{stockInfo.STO_FACTORYINFO}}</span>
+    </div>
+  </div>
+</ion-content>

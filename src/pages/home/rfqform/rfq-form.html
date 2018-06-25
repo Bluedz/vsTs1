@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>RFQ详情</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="form-top">
+    <div class="cs-list">
+      <label class="form-title-label">RFQ编码:</label>
+      <span class="form-title-span">{{rfqInfo.RFQ_CODE}}</span>
+    </div>
+    <div class="cs-list">
+      <label class="form-sub-title-label">RFQ名称:</label>
+      <div class="form-sub-title-div">{{rfqInfo.RFQ_NAME}}</div>
+    </div>
+  </div>
+  <div class="form-split"></div>
+  <div class="form-center">
+    <div>
+      <img src="assets/icon/small/1.png">
+      <label>创建时间:</label>
+      <span>{{rfqInfo.RFQ_CREATEDATE}}</span>
+    </div>
+    <div>
+      <img src="assets/icon/small/2.png">
+      <label>采购员:</label>
+      <span>{{rfqInfo.RFQ_BUYER}}</span>
+    </div>
+    <div>
+      <img src="assets/icon/small/3.png">
+      <label>状态:</label>
+      <span>{{rfqInfo.RFQ_STATUS}}</span>
+    </div>
+    <div>
+      <img src="assets/icon/small/4.png">
+      <label>类型:</label>
+      <span>{{rfqInfo.RFQ_TYPE}}</span>
+    </div>
+    <div>
+      <img src="assets/icon/small/5.png">
+      <label>是否框架:</label>
+      <span>{{rfqInfo.RFQ_ISFRAME}}</span>
+    </div>
+  </div>    
+</ion-content>

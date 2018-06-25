@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>采购跟踪列表</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="下拉刷新"
+      refreshingSpinner="circles"
+      refreshingText="加载中...">
+    </ion-refresher-content>
+  </ion-refresher>
+
+  <ion-searchbar id="adSearch"
+    [(ngModel)]="searchText"
+    [showCancelButton]="isShowCancel"
+    [debounce] = 500
+    (ionCancel)="onCancel($event)"
+    (ionClear) = "onClear($event)"
+    (ionInput)="ionInput($event)"
+    placeholder="搜索"
+    (click)="adSearch(filters)">
+  </ion-searchbar>
+  
+  <ion-list>
+    <ion-item-sliding class="sliding-item" *ngFor="let purchase of purchaseList">
+      <ion-item (click)="itemClick(purchase)">
+        <p [ngClass]="{true:'list-first2 ',false:'list-first'}[purchase.attId != null]" style="color: #ffffff; line-height: 20px; margin-right: 10px;">{{purchase.applyCode}}</p>
+        <p class="list-second" style="text-overflow: ellipsis;">{{purchase.maDesc}}</p>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="danger" (click)="deAttention(purchase)" *ngIf="purchase.attId != null">
+          取消关注
+        </button>
+        <button ion-button color="primary" (click)="attention(purchase)"  *ngIf="purchase.attId == null">
+          关注
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

@@ -1,0 +1,383 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+.searchbar-ios {
+  padding: 1px;
+  border-radius: 6px;
+  border-top: 0;
+  border-bottom: 0;
+  min-height: 0;
+}
+
+
+.list-ios .item-block .item-inner {
+    border-bottom: 1px solid #c8c7cc;
+}
+
+.ion-tab-icon-base {  
+  width: 32px;  
+  height: 32px;  
+  padding: 4px 4px 2px;  
+}  
+  
+.ion-tab-icon-md-base {  
+  min-width: 0 !important;  
+  height: 32px;  
+}
+
+.ion-ios-menu {  
+  @extend .ion-tab-icon-base;
+  content: url("../assets/icon/menu.png");  
+}  
+  
+.ion-ios-menu-outline {
+  @extend .ion-tab-icon-base; 
+  content: url("../assets/icon/menu-empty.png");  
+} 
+
+.ion-ios-about {  
+  @extend .ion-tab-icon-base;
+  content: url("../assets/icon/about.png");  
+}  
+  
+.ion-ios-about-outline {
+  @extend .ion-tab-icon-base; 
+  content: url("../assets/icon/about-empty.png");  
+} 
+
+.warp {
+    white-space: normal;
+}
+.cs-list {
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", 微软雅黑, Arial, sans-serif;
+    font-size: 12px;
+    padding: 6px;
+    border-bottom: solid 1px #eee;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+.cs-info {
+    padding-top: 8px;
+    color: #333;
+    white-space: normal;
+    font-size: 13px;
+}
+.cs-span {
+    color: #989898
+}
+
+.menuImg {
+    width: 56px;
+    border-radius: 16px;
+}
+
+.loginbk {
+    background-image: url('../assets/icon/login.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.logo {
+    padding: 20% 0px 50px 0px;
+    text-align: center;
+}
+.logo img{
+    height: 150px;
+    width: auto;
+}
+
+.login-row {
+    padding: 0 10%;
+    border-top: 1px;
+}
+
+.login-row img {
+    height: 20px;
+    width: auto;
+}
+
+.login-row .item-inner {
+    border-bottom: 1px solid #2C4668;
+}
+
+.login-btn {
+    padding: 40px 10% 0;
+}
+
+.toolbar-background-ios {
+    background-color: inherit;
+}
+.item-ios.item-block .item-inner {
+    
+    border:0;
+    background-position: left bottom;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, #eee), color-stop(0.5, #eee));
+    background-repeat: repeat-x;
+    -webkit-background-size: 100% 1px;
+}
+.toolbar-background-ios {
+    background-color: #0B235D;
+}
+
+.main-back {
+    background-image: url(../assets/icon/main.png);
+    background-size: 100%;
+}
+
+.menuDiv1 {
+    background-image: url(../assets/icon/menu01.png);
+    background-size: 100%;
+    border-radius: 5px;
+}
+
+.menuDiv2 {
+    background-image: url(../assets/icon/menu02.png);
+    background-size: 100%;
+    border-radius: 5px;
+}
+
+.menuDiv3 {
+    background-image: url(../assets/icon/menu03.png);
+    background-size: 100%;
+    border-radius: 5px;
+}
+
+.menuDiv4 {
+    background-image: url(../assets/icon/menu04.png);
+    background-size: 100%;
+    border-radius: 5px;
+}
+
+.menuDiv5 {
+    background-image: url(../assets/icon/menu05.png);
+    background-size: 100%;
+    border-radius: 5px;
+}
+
+.menuDiv6 {
+    background-image: url(../assets/icon/menu06.png);
+    background-size: 100%;
+    border-radius: 5px;
+}
+
+.menuDiv7 {
+    background-image: url(../assets/icon/menu07.png);
+    background-size: 100%;
+    border-radius: 5px;
+}
+
+.menuDiv8 {
+    background-image: url(../assets/icon/menu08.png);
+    background-size: 100%;
+    border-radius: 5px;
+}
+
+.menuText{
+    display: block;
+    font-size: 22px;
+    height: 72px;
+    line-height: 72px;
+    padding-left: 60px;
+    color: #ffffff;
+}
+
+.item-ios p {
+    font-size: 1.2rem;
+}
+
+.list-first {
+    display: inline-block;
+    background: #5095D9;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.list-first2 {
+    display: inline-block;
+    background: red;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.list-second {
+    display: inline-block;
+    height: 20px;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    width: 210px;
+}
+
+
+.toolbar-title-ios {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+}
+.back-button-icon-ios {
+    color: #fff;
+}
+.tabs-ios .tabbar {
+    border-top-width: 1px;
+    border-top-color: #eee;
+}
+.about {
+    display: -webkit-flex;
+    display: flex;
+}
+.list-ios .item-ios {
+    font-size: 1.2rem;
+    padding-left: 8px;
+}
+.list-ios .item-ios .label-ios {
+    margin: 0;
+}
+.list-ios > .item-block:first-child,.list-ios > .item-block:last-child {
+    border: 0;
+}
+button.item-ios:not([detail-none]) .item-inner {
+    background-size: 12px 12px;
+}
+.list-ios .item-block {
+    min-height: 36px;
+    border: 0;
+    margin-top: 1px;
+}
+
+.form-top {
+    background-image: url(../assets/icon/formDetail.png);
+    background-size: 100%;
+    padding: 20px 10px 0 10px;
+    margin-bottom: 20px;
+}
+
+.form-top .cs-list:last-child {
+    border-bottom: 0;
+}
+
+.form-title-label {
+    font-size: 1.8rem;
+    color: #2D59B5;
+    font-weight: 700;
+}
+
+.form-title-span {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    color: #4364B7;
+    padding-left: 10px;
+    font-size: 2.0rem;
+    font-weight: 700;
+}
+
+.form-sub-title-label {
+    font-size: 1.4rem;
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #6A6A6A;
+}
+
+.form-sub-title-div {
+    font-size: 1.4rem;
+    display: inline-block;
+    color: #6A6A6A;
+}
+
+.form-split {
+    display: block;
+    height: 5px;
+    background-color: #F2F2F2;
+}
+
+.form-center {
+    padding: 10px;
+}
+
+.form-center div {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #eee;
+    padding: 0 6px;
+}
+
+.form-center div img {
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+}
+
+.form-center div label {
+    height: 20px;
+    line-height: 20px;
+    font-size: 1.4rem;
+    padding-left: 2px;
+}
+
+.form-center div span {
+    font-size: 1.4rem;
+    float: right;
+    color: #919191;
+}
+
+#searchDiv button {
+    display: block;
+    
+    height: 38px;
+    line-height: 38px;
+
+}
+
+#adBtn {
+    float: right;
+    // width: 100px;
+    height: 38px;
+    line-height: 38px;
+    margin-left: 5px;
+}
+
+#adSearch {
+   width: auto;
+//    margin-top: 5px;
+}
+
+.search-content {
+    background-color: #F6F7FB;
+}
+
+.search-content ion-label {
+    font-size: 1.4rem;
+}
+
+.search-content ion-textarea {
+    background-color: #ffffff;
+}
+
+.search-content ion-textarea textarea {
+    margin-left: 5px;
+    padding-top: 10px;
+    height: 60px;
+}

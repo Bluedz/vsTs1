@@ -1,0 +1,72 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>采购跟踪</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content>
+     <div class="form-top">
+      <div class="cs-list">
+        <label class="form-title-label">申购号:</label>
+        <span class="form-title-span">{{purchaseTrack.applyCode}}</span>
+      </div>
+      <div class="cs-list">
+        <label class="form-sub-title-label">中文描述/英文描述/规格或型号:</label>
+        <div class="form-sub-title-div">{{purchaseTrack.maDesc}}</div>
+      </div>
+    </div>
+    <div class="form-split"></div>
+    <div class="form-center">
+      <div>
+        <img src="assets/icon/small/1.png">
+        <label>项目:</label>
+        <span>{{purchaseTrack.proj}}</span>
+      </div>
+      <div>
+        <img src="assets/icon/small/3.png">
+        <label>SETECH物料号:</label>
+        <span>{{purchaseTrack.sdsCode}}</span>
+      </div>
+      <div>
+        <img src="assets/icon/small/7.png">
+        <label>采购员:</label>
+        <span>{{purchaseTrack.purcher}}</span>
+      </div>
+      <div>
+        <img src="assets/icon/small/8.png">
+        <label>制造商:</label>
+        <span>{{purchaseTrack.maker}}</span>
+      </div>
+      <div>
+        <img src="assets/icon/small/9.png">
+        <label>采购状态:</label>
+        <span>{{purchaseTrack.purchaseStatus}}</span>
+      </div>
+      <div>
+        <img src="assets/icon/small/10.png">
+        <label>采购数量:</label>
+        <span>{{purchaseTrack.purchaseNum}}</span>
+      </div>
+      <div>
+        <img src="assets/icon/small/11.png">
+        <label>批准日期:</label>
+        <span>{{purchaseTrack.approveDate}}</span>
+      </div>
+      <div>
+        <img src="assets/icon/small/12.png">
+        <label>合同交货期:</label>
+        <span>{{purchaseTrack.conArrDate}}</span>
+      </div>
+      <div>
+        <img src="assets/icon/small/13.png">
+        <label>到货状态:</label>
+        <span>{{purchaseTrack.arrStatus}}</span>
+      </div>
+      <div>
+        <img src="assets/icon/small/14.png">
+        <label>到货数量:</label>
+        <span>{{purchaseTrack.arrNum == null ? 0 : purchaseTrack.arrNum}}</span>
+      </div>
+    </div>
+  </ion-content>
+  

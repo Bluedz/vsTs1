@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>物料详情</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="form-top">
+    <div class="cs-list">
+      <label class="form-title-label">SETECH物料号:</label>
+      <span class="form-title-span">{{mat.MAT_MATERIALNO}}</span>
+    </div>
+    <div class="cs-list">
+      <label class="form-sub-title-label">中文描述/英文描述/规格或型号:</label>
+      <div class="form-sub-title-div">{{mat.MAT_DESCRIPTION}}|{{mat.MAT_DESCRIPTIONEN}}|{{mat.MAT_MODEL}}</div>
+    </div>
+  </div>
+  <div class="form-split"></div>
+  <div class="form-center">
+    <div>
+      <img src="assets/icon/small/1.png">
+      <label>SAIC物料号:</label>
+      <span>{{mat.MAT_GMMATERIALNO}}</span>
+    </div>
+    <div>
+      <img src="assets/icon/small/2.png">
+      <label>制造商:</label>
+      <span>{{mat.MAT_MAKER}}</span>
+    </div>
+    <div>
+      <img src="assets/icon/small/3.png">
+      <label>制造商编号:</label>
+      <span>{{mat.MAT_MAKERNO}}</span>
+    </div>
+    <div>
+      <img src="assets/icon/small/4.png">
+      <label>设备制造商:</label>
+      <span>{{mat.MAT_EQUIPMENTMAKER}}</span>
+    </div>
+    <div>
+      <img src="assets/icon/small/5.png">
+      <label>设备制造商编号:</label>
+      <span>{{mat.MAT_EQUIPMENTMAKERNO}}</span>
+    </div>
+    <div>
+      <img src="assets/icon/small/6.png">
+      <label>单位:</label>
+      <span>{{mat.MAT_UNIT}}</span>
+    </div>
+    <div>
+      <img src="assets/icon/small/7.png">
+      <label>计划员码:</label>
+      <span>{{mat.MAT_PLANNERCODE}}</span>
+    </div>
+    <div>
+      <img src="assets/icon/small/8.png">
+      <label>物料属性:</label>
+      <span>{{mat.MAT_PROPERTY}}</span>
+    </div>
+    <div>
+      <img src="assets/icon/small/9.png">
+      <label>是否有图片:</label>
+      <span>{{mat.MAT_HASPICTURE}}</span>
+    </div>
+    <div>
+      <img src="assets/icon/small/10.png">
+      <label>厂区:</label>
+      <span>{{mat.MAT_FACTORYAREA}}</span>
+    </div>
+    <div>
+      <img src="assets/icon/small/11.png">
+      <label>ABC码:</label>
+      <span>{{mat.MAT_ABCCODE}}</span>
+    </div>
+    <div>
+      <img src="assets/icon/small/14.png">
+      <label>采购周期（天）:</label>
+      <span>{{mat.MAT_PURCHASEDAYS}}</span>
+    </div>
+  </div>
+</ion-content>

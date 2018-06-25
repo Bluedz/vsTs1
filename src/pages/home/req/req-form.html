@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>申购单详情</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="form-top">
+    <div class="cs-list">
+      <label class="form-title-label">申购号:</label>
+      <span class="form-title-span">{{reqInfo.REQ_APPLYCODE}}</span>
+    </div>
+    <div class="cs-list">
+      <label class="form-sub-title-label">物料描述:</label>
+      <div class="form-sub-title-div">{{reqInfo.REQ_DESCRIPTION}}</div>
+    </div>
+  </div>
+  <div class="form-split"></div>
+  <div class="form-center">
+    <div>
+      <img src="assets/icon/small/1.png">
+      <label>XTK物料号:</label>
+      <span>{{reqInfo.REQ_MATERIALNO}}</span>
+    </div>
+    <div>
+      <img src="assets/icon/small/2.png">
+      <label>SVW物料号:</label>
+      <span>{{reqInfo.REQ_SVWMATERIALNO}}</span>
+    </div>
+    <div>
+      <img src="assets/icon/small/3.png">
+      <label>提交日期:</label>
+      <span>{{reqInfo.REQ_SUBMITDATE}}</span>
+    </div>
+    <div>
+      <img src="assets/icon/small/4.png">
+      <label>采购员:</label>
+      <span>{{reqInfo.REQ_BUYER}}</span>
+    </div>
+    <div>
+      <img src="assets/icon/small/5.png">
+      <label>状态:</label>
+      <span>{{reqInfo.REQ_STATUS}}</span>
+    </div>
+    <div>
+      <img src="assets/icon/small/6.png">
+      <label>类别:</label>
+      <span>{{reqInfo.REQ_CATEGORY}}</span>
+    </div>
+    <div>
+      <img src="assets/icon/small/7.png">
+      <label>是否框架:</label>
+      <span>{{reqInfo.REQ_ISFRAME}}</span>
+    </div>
+    <div>
+      <img src="assets/icon/small/8.png">
+      <label>订货类型:</label>
+      <span>{{reqInfo.REQ_ORDERTYPE}}</span>
+    </div>
+    <div>
+      <img src="assets/icon/small/9.png">
+      <label>XTK现场工程师:</label>
+      <span>{{reqInfo.REQ_SDSFIELDENGINEER}}</span>
+    </div>
+    <div>
+      <img src="assets/icon/small/10.png">
+      <label>服务部经理审批日期:</label>
+      <span>{{reqInfo.REQ_APPROVALDATE}}</span>
+    </div>
+  </div>
+</ion-content>

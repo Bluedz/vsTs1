@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>库存信息-通用项目-{{plant}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="下拉刷新"
+      refreshingSpinner="circles"
+      refreshingText="加载中...">
+    </ion-refresher-content>
+  </ion-refresher>
+  <ion-searchbar
+    [(ngModel)]="searchText"
+    [showCancelButton]="isShowCancel"
+    placeholder="搜索"
+    [debounce] = 500
+    (click)="adSearch(filters)"
+    (ionCancel)="onCancel($event)"
+    (ionClear) = "onClear($event)"
+    (ionInput)="ionInput($event)">
+
+  </ion-searchbar>
+  <ion-list>
+    <ion-item *ngFor="let stock of stockList" (click)="itemClick(stock)">
+      <p class="list-first" style="color: #ffffff; line-height: 20px; margin-right: 10px;">{{stock.STO_SDSMETERIALNO}}</p>
+      <p class="list-second" style="text-overflow: ellipsis;">{{stock.STO_DESCRIPTION}}</p>
+    </ion-item>
+  </ion-list>
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

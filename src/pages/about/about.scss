@@ -1,0 +1,26 @@
+.about-logo {
+    padding: 10% 0 30px 0;
+    text-align: center;
+    color: #036EB7;
+    font-family: Arial,"Hiragino Sans GB","Microsoft Yahei", "微软雅黑";
+    font-size: 1.2rem;
+    background-image: url(../../assets/icon/about-back.png);
+    background-size: 100%;
+}
+.about-logo img {
+    height: 130px;
+    width: auto;
+}
+
+#about-list {
+    padding: 0 30px 0 0;
+}
+
+#about-list .about-item {
+    margin: 0 0 0 15px;
+    padding: 0 0 0 10px;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #F1F1F1;
+    color: #505050;
+}
+
